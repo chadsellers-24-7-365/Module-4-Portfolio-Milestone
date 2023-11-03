@@ -4,7 +4,21 @@ class ItemToPurchase:
         self.item_price = float(item_price)
         self.item_quantity = int(item_quantity)
 
+        """
+        Initializes the ItemToPurchase class with the specified attributes.
+        
+        Args:
+            item_name (str): The name of the item.
+            item_price (float): The price of the item.
+            item_quantity (int): The quantity of the item.
+        """
     def print_item_cost(self):
+        """
+        Prints the cost of the item.
+
+        Returns:
+            float: The total cost of the item.
+        """
         item_total_cost = self.item_price * self.item_quantity
         print(f"{self.item_name} {self.item_quantity} @ ${self.item_price} = ${item_total_cost}")
         return item_total_cost
